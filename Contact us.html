@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styleu.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js" defer></script>
+    <title>CONTACT us</title>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/-->
+    <style>
+        body {
+            background-image: url("co.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+        .field{
+            margin: 20px;
+            padding-left: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .bu{
+            padding: 25px;
+            margin: 20px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            text-decoration: none;
+
+        }
+        .but:hover{background-color: brown;}
+        .bu:hover{background-color: brown;}
+        .but{
+            padding: 25px;
+            margin: 20px;
+            background-color:white;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            color: black;
+        }
+    </style>
+    <script type="application/javascript">
+        function checkdata(){
+            //create references to the input elements we wish to validate
+            var username = document.getElementById("name");
+            var emailid = document.getElementById("email");
+            var mobileid = document.getElementById("mobile");
+            var messageid = document.getElementById("message");
+            //check if username field is empty
+            if(username.value==""){
+                alert("please enter the name");
+                username.focus();
+                return false;
+            }
+            //check if email field is empty
+            if(emailid.value==""){
+                alert("please enter the email");
+                emailid.focus();
+                return false;
+            }
+            //check if mobile number is empty
+            if(mobileid.value==""){
+                alert("please enter the mobile number");
+                mobileid.focus();
+                return false;
+            }
+            //check if the enterd messages is not empty
+            if(messageid.value==""){
+                alert("please enter the message you wanna send");
+                messageid.focus();
+                return false;
+            }
+            alert("Form validation is succesfull.");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Medical service center/MSC</div>
+            <div class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="Contact us.html">CONTACT US</a></li>
+                    <li><a href="About us.html">ABOUT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 style="text-align: center;">Write to us by filling these form</h1>
+    <p style="padding-left:30px;font-size: 25px; color: blue;">These form will inform us  that the message/comment<br>we get 
+        is from the users of the website  </p>
+    <fieldset name="CONTACT US NOW" class="field">
+        <legend>CONTACT US NOW</legend>
+    <form id="form" onsubmit="return checkdata()"  action="Home.html">
+            <div>
+                <label for="name" name="fname">NAME:</label>
+                <input style="margin: 5px; padding: 5px;" type="text" name="fname"  value="" id="name"placeholder="Please Enter your name">
+            </div>
+        <div>
+        <label for="email" name="email">Email:</label>
+        <input style="margin: 5px; padding: 5px;"type="email" name="email" value="" id="email"placeholder="Please enter your email">
+        </div>
+        <div>
+        <label for="mobile" name="mobile">Mobile number:</label>
+        <input style="margin: 5px; padding: 5px;" type="number" name="mobile" value=""  id="mobile" placeholder="09xxx....">
+        </div> 
+        <div>
+        <label for="message" name="message">Message:</label>
+        <textarea  style="margin: 5px; padding: 5px;" name="message" value="" id="message" placeholder="Type message/comment here:"  rows="10" cols="30"></textarea>
+        </div>
+        <a  class="bu"href="Contact us.html">RESET</a>
+        <input onclick= "checkdata()" class="but"  type= "submit" name="" value="SUBMIT">
+    </form>
+    </div>
+    </form>
+    </fieldset>
+    <hr>
+    <footer >
+        <table width="100%">
+            <tr class="tr">
+                <th >CONTACT</th>
+                <th >ON SOCIAL MEDIA</th>
+                <th >SERVICES</th>
+            </tr>
+            <tr class="tr">
+                <td>+3455666</td>
+                <td>our telegram channel:<a href="med@center">med@center</a></td>
+                <td><a href="Cancer.html">These is for cancer patients</a></td>
+            </tr>
+            <tr class="tr">
+                <td>+456534</td>
+                <td>our facebookpage :<a href=" medical-service">medical-service </a></td>
+                <td><a href="skin.html">These is for skin treatment</a></td>
+            </tr>
+            <tr class="tr">
+                <td>+455645</td>
+                <td>our youtube channel:<a href="Med center">Med center</a></td>
+                <td> <p><a href="Heart.html">These is for heart problems</a></td>
+            </tr>
+            <tr class="tr">
+                <td>Our email:<a href="medical@3217gmail.com">medica@3217gmail.com</a></td>
+                <td></td>
+                <td><p>&copy;copy rights reserved</p></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

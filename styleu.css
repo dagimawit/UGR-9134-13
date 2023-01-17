@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+html {
+    background-color: #DFDFDF;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: ;
+    max-width: 100%;
+    min-width: 65%;
+}
+
+.logo{
+    font-size: 1.8rem;
+    margin: .5rem;
+    color: white;
+}
+
+.navbar-links {
+    height: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 675px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li a{
+        display: flex;
+        color: black;
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        padding: .5rem .5rem;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .mam{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+      footer table {
+        font-size: 3vw;
+      }
+      footer table tr{
+        display: inline;
+        min-width: 100%;
+        max-width: 100%;
+      }
+footer table{
+    width: 100%;
+    text-align: left;
+    padding: 2PX;
+}
+
+.tab th td{
+    font-size: 20vw;
+}
+.bu{
+    
+    margin:0;
+    padding:20px;
+}
+.butt{
+    float: right;
+}
+
+.pic{
+    min-width: 100%;
+    max-width: 100%;
+
+}i{
+    margin:0;
+    min-width: 80%;
+    max-width: 100%;
+
+}
+em{
+    display:none;
+
+}
+#text h3,p,h1,video{
+    min-width: 90%;
+    max-width: 100%;
+
+
+}
+
