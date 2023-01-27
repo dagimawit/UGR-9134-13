@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styleu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="footer.css">
-    <script src="script.js" defer></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <script src="https://kit.fontawesome.com/dd6a4dc2ca.js" ></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<title>CANCER PATIENTS</title>
     <style>
-        body {
-            background-image: url("ca.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
+        section{
+          padding: 60px 0;
         }
-        .img{
-            padding-left:100px;
-            margin-bottom: 20px;
-            margin: 10px;
-            float:left;
-            margin: 1%;
-            max-width: 70%;
+        body{
+         background-image: url("photos/co.jpg");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
         }
-    </style>
+      </style>
 </head>
-<body >
-    <header>
-        <nav class="navbar">
-            <div class="logo">Medical service center/MSC</div>
-            <div class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="Home.html">HOME</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="Contact us.html">CONTACT US</a></li>
-                    <li><a href="About us.html">ABOUT US</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    </header>
-    <ol>
-       <h1><li style="font-style: italic; text-align: center; font-size: 30px;">FOR CANCER PATIENTS</li></h1>
-    </ol>
-    <h2><p style="font-style: italic; font-size: 20px; margin: 5px;">These is audio explanation</p></h2>
+<!-- navbar -->
+<section>
+  <!-- navbar -->
+  
+  <section class="navbar navbar-expand-lg  fixed-top bg-dark ">
+    <div class="container">
+    <!-- navbar brand / title -->
+    <a class="navbar-brand" href="#intro">
+      <span class="text-secondary fw-bold text-white fs-3">
+        Medical service center/MSC
+      </span>
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars text-white ms-auto "></span>
+      </button>
+        <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+  
+            <li class="nav-item">
+              <a class="nav-link fs-4 text-white fs-5" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-4 text-white fs-5" href="services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-4 text-white fs-5" href="Contact us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-4 text-white fs-5" href="About us.html">About us</a>
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </section>
+    </nav>
+
+
+    <Ol style="list-style: none;">
+       <h1><li class="fs-4 auto-m mt-3 p-3 ">FOR CANCER PATIENTS</li></h1>
+    </Ol>
+    <h2><p class="fs-5 m-2">These is audio explanation</p></h2>
     <p>
-        <h3><a style="margin: 20px; font-size: 25px; color: blue;"rel="transcript"  for="thevideo" title="English transcript" href="#text">See transcript</a></h3>
+        <h3><a  class="text-primary" rel="transcript"  for="thevideo" title="English transcript" href="#text">See transcript</a></h3>
     </p>
-    <audio controls style="margin: 5px;">
+    <audio controls class="m-3">
         <source src="AUDIOO.mP3" type="audio/mpeg"/>
         Your browser does not support the HTML5 tag.
     </audio>
     <track kind="transcript" srclang="Engilsh" src="photos/transcript.vtt" lang="en" label="English">
-  <transcript id="text" style="color: blue;">
+  <transcript id="text" class="text-primary">
     <br>0.00
     How many organs are there in the body, so many cancers are there.<br>
     0.07Cancer is just a name, but there are so many types, <br>
@@ -69,9 +81,9 @@
     0.25For example, the oral cavity, the thyroid: <br>
     there is thyroid cancer; breast: breast cancer;<br>
   </transcript>
-    <h3 style="margin: 10px; font-style: italic;">These is for those who wanna read</h3>
-    <p style="margin: 10px;">
-        <p style="font-size: 20px;color: black; margin: 15px;">The Definition of Cancer</p>
+    <h3 class="m-4">These is for those who wanna read</h3>
+    <p class="m-3 p-3">
+        <h5 class="fs-4 m-4">The Definition of Cancer</h5>
         Cancer is a disease in which some of the bodys cells 
         grow uncontrollably and spread to other parts of the body.
         Cancer can start almost anywhere in the human body, 
@@ -79,67 +91,114 @@
         grow and multiply (through a process called cell division) to 
         form new cells as the body needs them. When cells grow old or 
         become damaged, they die, and new cells take their place.
-        <p  style="font-size: 20px;color: black; margin: 15px;">How Does Cancer Develop?</p>
+        <h5 class="m-3">How Does Cancer Develop?</h5>
         Cancer is a genetic disease—that is, it is caused by 
         changes to genes that control the way our cells function,
         especially how they grow and divide.
-        <p  style="font-size: 20px;color: black; margin: 15px;">Types of Genes that Cause Cancer</p>
+        <h5 class="m-3">Types of Genes that Cause Cancer</h5>
         The genetic changes that contribute to cancer tend to affect 
         three main types of genes—proto-oncogenes, tumor suppressor genes,
         and DNA repair genes. These changes are sometimes called “drivers” of cancer.
-        <p  style="font-size: 20px;color: black; margin: 15px;">Differences between Cancer Cells and Normal Cells</p>
+        <h5 class="m-3">Differences between Cancer Cells and Normal Cells</h5>
         Cancer cells differ from normal cells in many ways. For instance, cancer cells:
         grow in the absence of signals telling them to grow. Normal cells only grow when they receive such signals. 
        ignore signals that normally tell cells to stop dividing or to die (a process known as programmed cell death, or apoptosis).
        invade into nearby areas and spread to other areas of the body. 
        Normal cells stop growing when they encounter other cells, and most normal cells do not move around the body. 
        tell blood vessels to grow toward tumors.
-       <p  style="font-size: 20px;color: black; margin: 15px;">Types of Cancer</p>
+       <h5 class="m-3">Types of Cancer</h5>
        Carcinoma ,Sarcoma,Leukemia,Lymphoma,Melanoma
-       <p  style="font-size: 20px;color: black; margin: 15px;">The advanced treatments</p>
+       <h5 class="m-3">The advanced treatments</h5>
        Organ Reconstruction Surgeries<br>
        Organ preservation surgeries<br>
        Robotic Surgery for Cancer<br>
        Minimally Invasive Surgeries<br>
-       <p  style="font-size: 20px;color: black; margin: 15px;">what are the causes for cancer </p>
+       <h5 class=" m-3">what are the causes for cancer </h5>
        Genetics<br>
        Tobaco<br>
        Diet<br>
        Raditions<br>
        Chemicals<br>
     </p>
-    <h3 style="margin: 8px; text-align:center;">Cancer cells</h3>
-    <img class="img" src="photos/Cancer.webp" height="50%"; alt="image describes about cancer"/>
-    <hr width="100%">
-    <footer class="footer">
-        <table class="table">
-            <tr class="tr">
-                <th>CONTACT</th>
-                <th>ON SOCIAL MEDIA</th>
-                <th>SERVICES</th>
-            </tr>
-            <tr  class="tr">
-                <td>+3455666</td>
-                <td>our telegram channel:<a href="med@center">med@center</a></td>
-                <td><a href="Cancer.html">These is for cancer patients</a></td>
-            </tr>
-            <tr  class="tr">
-                <td>+456534</td>
-                <td>our facebookpage :<a href=" medical-service">medical-service </a></td>
-                <td><a href="skin.html">These is for skin treatment</a></td>
-            </tr>
-            <tr  class="tr">
-                <td>+455645</td>
-                <td>our youtube channel:<a href="Med center">Med center</a></td>
-                <td> <p><a href="Heart.html">These is for heart problems</a></td>
-            </tr>
-            <tr  class="tr">
-                <td>Our email:<a href="medical@3217gmail.com">medica@3217gmail.com</a></td>
-                <td></td>
-                <td><p>&copy;copy rights reserved</p></td>
-            </tr>
-        </table>
-    </footer>
-
+    <h3 m-3>Cancer cells</h3>
+    <img src="photos/Cancer.webp" class="img-thumbnail" class="rounded float-end"  alt="image describes about cancer"> 
+    <section class="">
+        <!-- Footer -->
+        
+            
+        <footer class="bg-dark text-white text-center text-lg-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT US</h5>
+      
+                <p>
+                    +3455666 
+                </p>
+                <p>
+                    +3455666 
+                </p>
+                <p>
+                    +3455666 
+                </p>
+                <p>
+                    our email<a href="medical@3217gmail.com" class="text-white">medica@3217gmail.com</a>
+                </p>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">ON SOCIAL MEDIA</h5>
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#med@center" class="text-white">our telegram channel</a>
+                  </li>
+                  <li>
+                    <a href="#medical-service" class="text-white">our facebookpage</a>
+                  </li>
+                  <li>
+                    <a href="#medical-servicesse" class="text-white">our youtube channel</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">SERVICES</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="Cancer.html" class="text-white">These is for cancer patients</a>
+                  </li>
+                  <li>
+                    <a href="skin.html" class="text-white">These is for skin treatment</a>
+                  </li>
+                  <li>
+                    <a href="Heart.html" class="text-white">These is for heart problems</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MSC.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

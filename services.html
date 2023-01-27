@@ -1,90 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styleu.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="footer.css">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <head>
-        <title>Services</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dd6a4dc2ca.js" ></script>
+    <title>Services</title> 
     <style>
-        body {
-            background-image: url("co.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-}
-        .img{
-            float: right;
-            width: 800px;
-            height: 450px;
-            display: block;
-            margin: 20px;
-            margin: 20px
+        section{
+          padding: 60px 0;
         }
-        li{
-        display:inline-block;
-        margin: 15px;
-        font-style: italic;
-        font-weight: bolder;
+        body{
+         background-image: url("photos/co.jpg");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
         }
-    </style>
-    </head>
-    <body >
-        <header>
-            <nav class="navbar">
-                <div class="logo">Medical service center/MSC</div>
-                <div class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="Home.html">HOME</a></li>
-                        <li><a href="services.html">SERVICES</a></li>
-                        <li><a href="Contact us.html">CONTACT US</a></li>
-                        <li><a href="About us.html">ABOUT US</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <img  class="img"src="photos/original.avif" alt="image showing telescope">
-        <ol start="1" class="li">
+      </style>
+</head>
+<section>
+  <!-- navbar -->
+  
+  <section class="navbar navbar-expand-lg  fixed-top bg-dark ">
+    <div class="container">
+    <!-- navbar brand / title -->
+    <a class="navbar-brand" href="#intro">
+      <span class="text-secondary fw-bold text-white fs-3">
+        Medical service center/MSC
+      </span>
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars text-white ms-auto "></span>
+      </button>
+        <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+  
+            <li class="nav-item">
+              <a class="nav-link fs-4 text-white fs-5" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-4 text-white fs-5" href="services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-4 text-white fs-5" href="Contact us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fs-4 text-white fs-5" href="About us.html">About us</a>
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </section>
+    </nav>
+       
+        <div class="row">
+          <div class="col">
+        <ol start="1" class="mt-5">
             <li><a href="Cancer.html">For cancer patients</a></li><br>
             <li><a href="skin.html">For skin treatment</a></li><br>
             <li><a href="Heart.html">For heart problems</a></li><br>
         </ol>
-           <hr width="100%"/>
-           <footer >
-            <table class="table">
-                <tr>
-                    <th>CONTACT US</th>
-                    <th >ON SOCIAL MEDIA</th>
-                    <th >SERVICES</th>
-                </tr>
-                <tr class="tr">
-                    <td>+3455666</td>
-                    <td>our telegram channel:<a href="med@center">med@center</a></td>
-                    <td ><a href="Cancer.html">These is for cancer patients</a></td>
-                </tr>
-                <tr class="tr">
-                    <td>+456534</td>
-                    <td>our facebookpage :<a href=" medical-service">medical-service </a></td>
-                    <td><a href="skin.html">These is for skin treatment</a></td>
-                </tr>
-                <tr class="tr">
-                    <td>+455645</td>
-                    <td>our youtube channel:<a href="Med center">Med center</a></td>
-                    <td style="color: white;"> <p><a href="Heart.html">These is for heart problems</a></td>
-                </tr>
-                <tr class="tr">
-                    <td>Our email:<a href="medical@3217gmail.com">medica@3217gmail.com</a></td>
-                    <td></td><br>
-                    <td><p>&copy;copy rights reserved</p></td>
-                </tr>
-            </table>
-        </footer>
+        </div>
+        <div class="col">
+          <img src="photos/original.avif"  class="img-fluid w-75 h-100 rounded mx-auto d-block me-3 mt-1 mb-5 pt-3" alt="image showing telescope">
+        </div>
+      </div>
+        <section class="">
+            <!-- Footer -->
+            <footer class="bg-dark text-white text-center text-lg-start">
+              <!-- Grid container -->
+              <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">CONTACT US</h5>
+          
+                    <p>
+                        +3455666 
+                    </p>
+                    <p>
+                        +3455666 
+                    </p>
+                    <p>
+                        +3455666 
+                    </p>
+                    <p>
+                        our email<a href="medical@3217gmail.com" class="text-white">medica@3217gmail.com</a>
+                    </p>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">ON SOCIAL MEDIA</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#med@center" class="text-white">our telegram channel</a>
+                      </li>
+                      <li>
+                        <a href="#medical-service" class="text-white">our facebookpage</a>
+                      </li>
+                      <li>
+                        <a href="#medical-servicesse" class="text-white">our youtube channel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">SERVICES</h5>
+          
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="Cancer.html" class="text-white">These is for cancer patients</a>
+                      </li>
+                      <li>
+                        <a href="skin.html" class="text-white">These is for skin treatment</a>
+                      </li>
+                      <li>
+                        <a href="Heart.html" class="text-white">These is for heart problems</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MSC.com</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
 </html>
